@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  FaceId
+
+  Created by zhou jianbang on 2024/5/9.
+  
+*/
+
+opened = "打开";
+denied = "关闭";
+openFace = "点击进行面容 ID 登录";

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  FaceId
+
+  Created by zhou jianbang on 2024/5/9.
+  
+*/
+
+opened = "opened";
+denied = "denied";
+openFace = "Login with Face Id";

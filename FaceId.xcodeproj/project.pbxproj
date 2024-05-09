@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151435ED2BEC6A7D002845C7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 151435EF2BEC6A7D002845C7 /* Localizable.strings */; };
+		151435F22BEC6D42002845C7 /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151435F12BEC6D42002845C7 /* RowItem.swift */; };
 		15F65C7D2BEB28C400E22EAF /* FaceIdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F65C7C2BEB28C400E22EAF /* FaceIdApp.swift */; };
 		15F65C7F2BEB28C400E22EAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F65C7E2BEB28C400E22EAF /* ContentView.swift */; };
 		15F65C812BEB28C500E22EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F65C802BEB28C500E22EAF /* Assets.xcassets */; };
@@ -14,6 +16,9 @@
 		15F65C8E2BEB28C500E22EAF /* FaceIdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F65C8D2BEB28C500E22EAF /* FaceIdTests.swift */; };
 		15F65C982BEB28C500E22EAF /* FaceIdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F65C972BEB28C500E22EAF /* FaceIdUITests.swift */; };
 		15F65C9A2BEB28C500E22EAF /* FaceIdUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F65C992BEB28C500E22EAF /* FaceIdUITestsLaunchTests.swift */; };
+		15F65CA82BEB28E600E22EAF /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F65CA72BEB28E600E22EAF /* AppSetting.swift */; };
+		15F65CAB2BEB297C00E22EAF /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F65CAA2BEB297C00E22EAF /* Setting.swift */; };
+		15F65CAD2BEB662C00E22EAF /* FaceIdLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F65CAC2BEB662C00E22EAF /* FaceIdLock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		151435EE2BEC6A7D002845C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		151435F02BEC6A80002845C7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		151435F12BEC6D42002845C7 /* RowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItem.swift; sourceTree = "<group>"; };
 		15F65C792BEB28C400E22EAF /* FaceId.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceId.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F65C7C2BEB28C400E22EAF /* FaceIdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdApp.swift; sourceTree = "<group>"; };
 		15F65C7E2BEB28C400E22EAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,10 @@
 		15F65C932BEB28C500E22EAF /* FaceIdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceIdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F65C972BEB28C500E22EAF /* FaceIdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdUITests.swift; sourceTree = "<group>"; };
 		15F65C992BEB28C500E22EAF /* FaceIdUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15F65CA72BEB28E600E22EAF /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		15F65CAA2BEB297C00E22EAF /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		15F65CAC2BEB662C00E22EAF /* FaceIdLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdLock.swift; sourceTree = "<group>"; };
+		15F65CAE2BEBB84C00E22EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +106,14 @@
 		15F65C7B2BEB28C400E22EAF /* FaceId */ = {
 			isa = PBXGroup;
 			children = (
+				15F65CAE2BEBB84C00E22EAF /* Info.plist */,
+				15F65CA92BEB297000E22EAF /* views */,
+				15F65CA62BEB28D100E22EAF /* tool */,
 				15F65C7C2BEB28C400E22EAF /* FaceIdApp.swift */,
 				15F65C7E2BEB28C400E22EAF /* ContentView.swift */,
 				15F65C802BEB28C500E22EAF /* Assets.xcassets */,
 				15F65C822BEB28C500E22EAF /* Preview Content */,
+				151435EF2BEC6A7D002845C7 /* Localizable.strings */,
 			);
 			path = FaceId;
 			sourceTree = "<group>";
@@ -125,6 +141,24 @@
 				15F65C992BEB28C500E22EAF /* FaceIdUITestsLaunchTests.swift */,
 			);
 			path = FaceIdUITests;
+			sourceTree = "<group>";
+		};
+		15F65CA62BEB28D100E22EAF /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				15F65CA72BEB28E600E22EAF /* AppSetting.swift */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		15F65CA92BEB297000E22EAF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				15F65CAA2BEB297C00E22EAF /* Setting.swift */,
+				15F65CAC2BEB662C00E22EAF /* FaceIdLock.swift */,
+				151435F12BEC6D42002845C7 /* RowItem.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +247,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 15F65C702BEB28C400E22EAF;
 			productRefGroup = 15F65C7A2BEB28C400E22EAF /* Products */;
@@ -232,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15F65C842BEB28C500E22EAF /* Preview Assets.xcassets in Resources */,
+				151435ED2BEC6A7D002845C7 /* Localizable.strings in Resources */,
 				15F65C812BEB28C500E22EAF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +295,10 @@
 			files = (
 				15F65C7F2BEB28C400E22EAF /* ContentView.swift in Sources */,
 				15F65C7D2BEB28C400E22EAF /* FaceIdApp.swift in Sources */,
+				15F65CAB2BEB297C00E22EAF /* Setting.swift in Sources */,
+				15F65CAD2BEB662C00E22EAF /* FaceIdLock.swift in Sources */,
+				15F65CA82BEB28E600E22EAF /* AppSetting.swift in Sources */,
+				151435F22BEC6D42002845C7 /* RowItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +333,18 @@
 			targetProxy = 15F65C942BEB28C500E22EAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		151435EF2BEC6A7D002845C7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				151435EE2BEC6A7D002845C7 /* en */,
+				151435F02BEC6A80002845C7 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15F65C9B2BEB28C500E22EAF /* Debug */ = {
@@ -416,11 +468,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FaceId/Preview Content\"";
+				DEVELOPMENT_TEAM = ZXZZQR236W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaceId/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -433,6 +488,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sc.demo.face.FaceId;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,11 +500,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FaceId/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaceId/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,6 +520,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sc.demo.face.FaceId;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
