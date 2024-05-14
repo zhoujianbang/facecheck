@@ -1,0 +1,6 @@
+framework module Pods_FaceId_FaceIdUITests {
+  umbrella header "Pods-FaceId-FaceIdUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

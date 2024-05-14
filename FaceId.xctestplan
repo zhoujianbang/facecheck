@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "339591DE-5E40-403A-93BF-637597F1C7FE",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FaceId.xcodeproj",
+      "identifier" : "15F65C782BEB28C400E22EAF",
+      "name" : "FaceId"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FaceId.xcodeproj",
+        "identifier" : "15F65C882BEB28C500E22EAF",
+        "name" : "FaceIdTests"
+      }
+    }
+  ],
+  "version" : 1
+}

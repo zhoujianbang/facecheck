@@ -1,0 +1,16 @@
+PODS:
+  - ViewInspector (0.9.1)
+
+DEPENDENCIES:
+  - ViewInspector (= 0.9.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ViewInspector
+
+SPEC CHECKSUMS:
+  ViewInspector: 68842776f07fbf186713689d4846e54f32ccbffb
+
+PODFILE CHECKSUM: dac405db6362117bcbc420f77323d8f9ba7b9799
+
+COCOAPODS: 1.11.3

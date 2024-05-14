@@ -13,6 +13,8 @@ struct FaceIdLock: View {
     @State private var isGoOpenAuth = false
     @State private var fackCheckStatus = "";
     
+    internal var didAppear: ((Self) -> Void)?
+    
     var body: some View {
         ZStack {
             Color("mainBg").ignoresSafeArea()
@@ -20,15 +22,7 @@ struct FaceIdLock: View {
                 Button {
                     authenticate()
                 } label: {
-                    VStack{
-                        Image(systemName: "faceid")
-                          .foregroundColor(Color.blue)
-                          .font(.system(size: 54))
-                          .padding()
-                        Text(NSLocalizedString("openFace", comment: "check face"))
-                          .foregroundColor(.blue)
-
-                    }
+                    FaceIdLockItem()
                 }
                 
                 Text(fackCheckStatus)
@@ -39,6 +33,9 @@ struct FaceIdLock: View {
             .ignoresSafeArea(edges: .top)
             .navigationTitle("Face Login")
             .navigationBarTitleDisplayMode(.inline)
+        }
+        .onAppear {
+            self.didAppear?(self)
         }
     }
     

@@ -11,9 +11,11 @@ import LocalAuthentication
 struct Setting: View {
         
     @StateObject var appSetting = AppSetting()
-    @State private var isOpenFaceIdLock = false
-    @State private var isActive = false
+    @State var isOpenFaceIdLock = false
+    @State var isActive = false
 
+    internal var didAppear: ((Self) -> Void)? 
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -45,6 +47,7 @@ struct Setting: View {
         }
         .environmentObject(appSetting)
         .onAppear {
+            self.didAppear?(self)
             print(UserDefaults.standard.bool(forKey: "isOpenFaceIdLock"))
             self.isOpenFaceIdLock = UserDefaults.standard.bool(forKey: "isOpenFaceIdLock");
         }
